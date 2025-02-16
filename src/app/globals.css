@@ -25,6 +25,33 @@ body {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  padding: 0 2rem;
-  padding-left: 60%;
+  padding-left: 70%;
+}
+
+.hero-section {
+  display: flex;
+  justify-content: center;
+  background: var(--background);
+  height: 400px;
+  padding-right: 42%;
+  padding-left: 10%;
+  padding-bottom: 30px;
+}
+
+.portfolio-text {
+  display: flex;
+  justify-content: flex-start;
+  width: 50%;
+}
+
+.portfolio-item {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  padding-left: 7%;
+  padding-right: 7%;
+}
+
+#work {
+  height: 800px;
 }
