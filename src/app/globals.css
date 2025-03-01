@@ -1,57 +1,24 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
 
+@theme {
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
 
 body {
   color: var(--foreground);
-  background: rgb(234, 230, 227);
-  font-family: Organica;
-}
-
-.bg-pad {
-  background: rgb(234, 230, 227);
-}
-
-.nav-bar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1rem 2rem;
   background: var(--background);
-}
-
-.nav-items {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  padding-left: 70%;
-}
-
-.hero-section {
-  display: flex;
-  justify-content: center;
-  background: var(--background);
-  height: 400px;
-  padding-right: 42%;
-  padding-left: 10%;
-  padding-bottom: 30px;
-}
-
-.portfolio-text {
-  display: flex;
-  justify-content: flex-start;
-  width: 50%;
-}
-
-.portfolio-item {
-  display: flex;
-  width: 100%;
-  justify-content: space-between;
-  padding-left: 7%;
-  padding-right: 7%;
-}
-
-#work {
-  height: 800px;
+  font-family: Arial, Helvetica, sans-serif;
 }
